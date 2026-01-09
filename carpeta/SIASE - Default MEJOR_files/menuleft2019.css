@@ -1,0 +1,88 @@
+﻿#redondear {
+   width:170px; /*130*/
+	padding:4px; /* 5 */
+	background:#004A8F;
+	
+	border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px;
+	/*box-shadow:1px 1px 3px #888; -webkit-box-shadow:1px 1px 3px #888; -moz-box-shadow:1px 1px 3px #888;*/
+}
+li{border-bottom:1px solid #FFF;} /*separacion de los text */
+li:last-child{border:none}
+
+
+
+body {
+  font-family: Arial Unicode MS;
+  font-size: 0.9em; /*0.9em=14.4px */
+}
+
+ul.menu, ul.menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0; /**/
+  width: 170px; /*ancho total del menu en EM:170px=10.625em (15em=240px)
+  aqui puedes convertir  px a em : http://riddle.pl/emcalc/*/
+}
+
+ul.menu a {
+  display: block;
+  text-decoration: none;	
+}
+
+ul.menu li {
+  margin-top: 1px;
+}
+
+ul.menu li a, ul.menu ul.menu li a {
+  background: #004A8F;/*333  Color del menu comlpeto*/
+  color: #FFFFFF; /*fff Color letra inicial menu*/
+  
+  padding:4px;
+}
+
+ul.menu li a:hover, ul.menu ul.menu li a:hover {
+  background: #003A71; /*000 Color al poner el mouse en menu: #*/
+}
+
+ul.menu li ul li a, ul.menu ul.menu li ul li a {
+  background: #DDDDDD; /*Color fondo submenu: #ccc*/
+  color: #004A8F; /*Color letra submenu:000*/         
+  padding-left: 10px;
+  font-size: 0.750em; /*0.688em=11px */
+}
+
+ul.menu li ul li a:hover, ul.menu ul.menu li ul li a:hover {
+  background: #CCCCCC; /*Color fondo submenu: #aaa*/
+ /*  border-left: 5px #000 solid; */
+  /* padding-left: 15px;  */
+}
+ul.menu ul.menu li a:hover {
+    border-left: 0;
+    padding-left: 0.5em;
+}
+ul.menu ul.menu {
+    border-left: 5px #f00 solid; /*f00*/
+}
+ul.menu a.active, ul.menu ul.menu li a.active, ul.menu a.active:hover, ul.menu ul.menu li a.active:hover {
+    text-decoration: underline;
+    background: #345F90; /* color al quedar seleccionado la opcion de menu: c00*/
+}
+div.panel {
+    border: 1px #000 solid;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+ul.menu div.panel a, ul.menu div.panel li a:hover  {
+    display :inline;
+    color: #F8B01D; /*666*/
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ul.menu div.panel a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
